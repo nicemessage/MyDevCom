@@ -1,0 +1,12 @@
+@each $size in 12px, 14px, 16px, 20px, 24px, 36px {
+  .ql-editor .ql-size-#{$size} {
+    font-size: #{$size};
+  }
+  .ql-bubble .ql-picker.ql-size .ql-picker-item[data-value='#{$size}']::before {
+    font-size: #{$size};
+  }
+  .ql-snow .ql-picker.ql-size .ql-picker-label[data-value='#{$size}']::before,
+  .ql-snow .ql-picker.ql-size .ql-picker-item[data-value='#{$size}']::before {
+    content: '#{$size}';
+  }
+}
